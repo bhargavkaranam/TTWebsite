@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+
+   <link rel="stylesheet" type="text/css" href="javascript.fullPage.css">
+      <link rel="stylesheet" type="text/css" href="style.css">
+
+
+</head>
+<body>
+<!-- <ul id="menu">
+      <li data-menuanchor="first" class="active"><a href="#first">First Section</a></li>
+      <li data-menuanchor="second"><a href="#second">Second Section</a></li>
+      <li data-menuanchor="third"><a href="#third">Third Section</a></li>
+      <li data-menuanchor="fourth"><a href="#fourth">Fourth Section</a></li>
+</ul> -->
+
+<div id="fullpage">
+<div class="section active" id="section1">
+   <div class="content">
+   	<h1>Section1</h1>
+   </div>
+</div>
+<div class="section" id="section2">
+   <div class="content">
+   	<h1>Section2</h1>
+   </div>
+</div>
+<div class="section" id="section3">
+   <div class="content">
+   	<h1>Section3</h1>
+   </div>
+</div>
+<div class="section" id="section4">
+   <div class="content">
+   	<h1>Section4</h1>
+   </div>
+</div>
+<div class="section fp-auto-height" id="footer">
+   <div class="content">
+   	<h1>Footer</h1>
+   </div>
+</div>
+
+</div>
+
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+
+
+<script type="text/javascript" src="jquery.fullPage.js"></script>
+<!-- <script type="text/javascript" src="script.js"></script> -->
+<script type="text/javascript">
+   $(document).ready(function(){
+      $('#fullpage').fullpage({
+      sectionsColor:['#1BBC9B','#BFDA00','#4BBFC3','#7BAABE','black'],
+      anchors: ['first', 'second', 'third', 'fourth', 'foot'],
+      menu: '#menu',
+      css3:true,
+      verticalCentered:false,
+      navigation:true,
+      navigationPosition:'right'
+      });
+
+   });
+
+</script>
+</body>
+</html>
