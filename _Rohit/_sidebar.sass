@@ -1,0 +1,129 @@
+.sidebar-wrapper
+    width: 135px
+
+.sidebar
+    position: fixed
+    display: flex
+    flex-direction: column
+    justify-content: center
+    align-content: space-between
+    height: 100vh
+    width: 135px
+    background-color: $sidebar-bg
+
+    h1.logo
+        +hide-text
+        background:
+            image: url('/logo.svg')
+            repeat: no-repeat
+            position: center
+
+        +size(100px)
+        position: absolute
+        top: 0
+        left: 20px
+    svg
+        +size(100px)
+        position: relative
+        top: 20px
+        left: 16%
+
+
+    ul
+        margin: 0
+        padding: 0
+        text-align: center
+        padding-top: 10px
+
+        li
+            padding-top: 9%
+            // padding-right: 20px
+            font-size: 14px
+            color: $sidebar-text
+            list-style-type: none
+
+
+    a
+        display: block
+        position: relative
+        text-decoration: none
+        color: $sidebar-text
+        text-align: right
+        padding-right: 20px
+        top: 110px
+        text-align: right
+
+
+    .menu-parent
+        display: inline-block
+        height: 65px
+        width: 60px
+        display: none
+
+        .bar
+            height: 2px
+            width: 50px
+            background-color: #000
+            border-radius: 3px
+            display: block
+            position: relative
+            top: 5px
+            margin-bottom: 12px
+            transition: all 0.3s ease
+
+    .active .bar:nth-of-type(1)
+        transform: rotate(-45deg)
+        top: 14px
+
+    .active .bar:nth-of-type(3)
+        transform: rotate(45deg)
+        top: -14px
+
+    .active .bar:nth-of-type(2)
+        opacity: 0
+@media (max-width: 1060px)
+
+    .sidebar-wrapper
+        display: block
+        flex: 0
+
+    .sidebar
+        display: block
+        height: 125px
+        width: 100%
+        +display(flex)
+        +flex-direction(row)
+        +justify-content(space-between)
+        transition: all 0.3s ease
+
+        ul
+            position: relative
+            top: 10px
+            text-align: center
+            padding-left: 70px
+            display: none
+            transition: all 0.3s ease
+
+
+            li
+                font-size: 16px
+                margin-top: 5px
+
+        a
+            display: none
+
+        h1.logo
+            +size(80px)
+            top: 10px
+
+        .menu-parent
+            position: relative
+            top: 35px
+            padding-right: 20px
+            display: inline-block
+
+    .sidebar-toggle
+        height: 350px
+
+        .pane-display
+            display: inline-block

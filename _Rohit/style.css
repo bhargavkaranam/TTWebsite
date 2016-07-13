@@ -1,0 +1,157 @@
+body {
+  background-color: #eee;
+  margin: 0;
+  padding: 0;
+  font-family: "Fira Sans", sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+body ::selection {
+  background: #FFF498;
+}
+
+.sidebar-wrapper {
+  width: 135px;
+}
+
+.sidebar {
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  -ms-align-items: center;
+  align-items: center;
+  height: 100vh;
+  width: 135px;
+  background-color: white;
+}
+.sidebar h1.logo {
+  background-image: url("/images/logo.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  top: 0;
+  left: 15px;
+}
+.sidebar svg {
+  width: 100px;
+  height: 100px;
+  position: relative;
+  top: 20px;
+  left: 16%;
+}
+.sidebar ul {
+  margin: 0;
+  padding: 0;
+  text-align: right;
+  padding-top: 10px;
+}
+.sidebar ul li {
+  padding-top: 9%;
+  padding-right: 20px;
+  font-size: 14px;
+  color: black;
+  list-style-type: none;
+}
+.sidebar a {
+  display: block;
+  position: relative;
+  text-decoration: none;
+  color: black;
+  text-align: right;
+  padding-right: 20px;
+  top: 110px;
+  text-align: right;
+}
+.sidebar .menu-parent {
+  display: inline-block;
+  height: 65px;
+  width: 60px;
+  display: none;
+}
+.sidebar .menu-parent .bar {
+  height: 2px;
+  width: 50px;
+  background-color: #000;
+  border-radius: 3px;
+  display: block;
+  position: relative;
+  top: 5px;
+  margin-bottom: 12px;
+  transition: all 0.3s ease;
+}
+.sidebar .active .bar:nth-of-type(1) {
+  transform: rotate(-45deg);
+  top: 14px;
+}
+.sidebar .active .bar:nth-of-type(3) {
+  transform: rotate(45deg);
+  top: -14px;
+}
+.sidebar .active .bar:nth-of-type(2) {
+  opacity: 0;
+}
+
+.logo-container h1{
+    display: none;
+}
+
+.img-container {
+    width: 50px;
+    height: 50px;
+}
+
+.img-container img{
+    position: relative;
+    bottom: 170px;
+}
+
+@media (max-width: 1060px) {
+  .sidebar-wrapper {
+    display: block;
+    flex: 0;
+  }
+
+  .sidebar {
+    display: block;
+    height: 125px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    transition: all 0.3s ease;
+  }
+  .sidebar ul {
+    position: relative;
+    top: 10px;
+    text-align: center;
+    padding-left: 70px;
+    display: none;
+    transition: all 0.3s ease;
+  }
+  .sidebar ul li {
+    font-size: 16px;
+    margin-top: 5px;
+  }
+  .sidebar a {
+    display: none;
+  }
+  .sidebar h1.logo {
+    height: 65px;
+    width: 65px;
+  }
+  .sidebar .menu-parent {
+    position: relative;
+    top: 35px;
+    padding-right: 20px;
+    display: inline-block;
+  }
+
+  .sidebar-toggle {
+    height: 350px;
+  }
+  .sidebar-toggle .pane-display {
+    display: inline-block;
+  }
+}
