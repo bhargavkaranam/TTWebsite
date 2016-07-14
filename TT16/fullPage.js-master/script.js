@@ -1,9 +1,5 @@
-$(document).ready(function(){
-	$(".closeBttn").click(function(){
- $(".sidenav").css({"visibility":"hidden","opacity":"0"});
-});
-	$(".openBttn").click(function(){
-		$(".sidenav").css({"visibility": "visible","opacity":"1"});
-	});
-
+fullpage.initialize('#fullpage',{
+	anchors: ['section1','section2','section3','section4','footer'],
+	menu:'#menu',
+	css3:true;
 });
