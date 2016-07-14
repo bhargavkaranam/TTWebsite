@@ -26,28 +26,28 @@ h1{
 }
 .sidenav {
     height: 100%;
-    width: 250px;
+    width: 0px;
     position: fixed;
     z-index: 1;
     top: 0;
     left: 0;
     background-color: #111;
     overflow-x: hidden;
-    visibility: hidden;
-    transition: visibility 0.5s, opacity 0.5s linear;
+    transition: 1s;
     padding-top: 60px;
-    opacity: 0;
 }
 .sidenav a{
-	padding: 8px 8px 8px 8px;
+	text-align: center;
+	padding: 15px 15px 15px 15px;
 	text-decoration: none;
-	font-size: 25px;
+	font-size: 18px;
 	color: grey;
 	display: block;
 	transition: 0.3s;
 }
 .sidenav a:hover{
 	color: #f1f1f1;
+	font-size: 22px;
 }
 .closeBttn{
 	position: absolute;
@@ -59,4 +59,17 @@ h1{
 @media screen and (max-height: 450px) {
   .sidenav {padding-top: 15px;}
   .sidenav a {font-size: 18px;}
+}
+.openBttn{
+	z-index: 1;
+	position: fixed;
+	left: 30px;
+	top: 20px;
+	padding: 7px 7px;
+	transition: transform 0.5s;
+	opacity: 0.5;
+}
+.openBttn:hover{
+	transform: rotate(360deg);
+	opacity: 1;
 }
