@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Get In Touch</title>
+	<link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Lora:700' rel='stylesheet' type='text/css'>
+	<style type="text/css">
+		.container{
+			position: absolute;
+			margin-left: 100px;
+			height: 100%;
+			width: 100%;
+			/*background-image: url('dia.png');*/
+			background-repeat: no-repeat;
+			/*opacity: 0.8;*/
+		}
+		body{
+			/*background-image: url('dia.png');*/
+			background-color: #8EC7D2;
+		}
+		#con_form{
+			position: absolute;
+			margin: 70px 600px 100px 30px;
+			
+		}
+		input[type=text]{
+			width: 100%;
+			box-sizing: border-box;
+			padding: 10px 10px;
+			opacity: 0.4;
+
+		}
+		input[type=text]:focus{
+			background-color: #F2F2F2;
+		}
+		input[name=message]{
+			height: 100px;
+		}
+		textarea{
+			width: 100%;
+			box-sizing: border-box;
+			padding: 10px 10px;
+			opacity: 0.4;
+			height: 100%;
+
+		}
+		button{
+			padding: 15px 32px;
+			background-color: black;
+			opacity: 0.6;
+			border:none;
+			width: 100%;
+			text-decoration: none;
+			display: inline-block;
+			font-size: 20px;
+			cursor: pointer;
+			border-radius: 10px;
+		}
+		button:hover{
+			background-color: black;
+			opacity: 0.8;
+			color: white;
+		}
+		.contact_container{
+			position: absolute;
+			
+			margin:50px 100px 50px 700px;
+			/*background-color: black;*/
+
+		}
+		#contact1{
+			vertical-align: middle;
+			text-align: justify;
+		}
+		#contact2{
+			margin-top: 60px;
+			vertical-align: middle;
+			text-align: justify;
+		}
+		img{
+			border-radius: 50%;
+		}
+		#con_info{
+			margin-top: -180px;
+			margin-left: 200px;
+			display: inline-block;
+			vertical-align: middle;
+			font-size: 20px;
+			font-family: 'Open Sans', sans-serif;
+		}
+		#con_email{
+			margin-top: 80px;
+			margin-left: 50px;
+			font-size: 20px;
+			font-family: 'Open Sans', sans-serif;
+		}
+		h1{
+			/*font-family: 'Open Sans', sans-serif;*/
+			font-family: 'Lora', serif;
+			font-size: 36px;
+		}
+
+
+
+
+
+	</style>
+</head>
+<body>
+	<div class="container">
+	<div class="contact_container">
+	<div id="contact1">
+		<div><img src="akash.jpg" height="150px" width="150px">
+		</div>
+		<div id="con_info">
+			Aakash Verma<br>
+			Convener<br>
+			+919740496828
+		</div>
+	</div>
+
+	<div id="con_email">convener@techtatva.in</div>
+
+		<div id="contact2">
+		<div><img src="rumy.jpg" height="150px" width="150px">
+		</div>
+		<div id="con_info">
+
+			Rumy Sinha<br>
+			Convener<br>
+			+919740578188
+
+		</div>
+	</div>
+		
+
+	</div>
+
+
+
+		<div id="con_form">
+		<h1>Get In Touch With Us</h1><br><br>
+			<form action="con.php" method="post">			
+			<input type="text" name="name" placeholder="Name"><br><br><br>
+			<input type="text" name="email" placeholder="Email"><br><br><br>
+			<textarea placeholder="How Can We Help You?"></textarea><br><br><br>
+			<button>Hear Me Out</button>
+
+			</form>
+		</div>
+		
+	</div>
+</body>
+</html>
