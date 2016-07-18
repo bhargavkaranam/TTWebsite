@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>TechTatva'16</title>
+
+   <link rel="stylesheet" type="text/css" href="javascript.fullPage.css">
+      <link rel="stylesheet" type="text/css" href="style.css">
+
+
+</head>
+<body>
+	<!-- Sidebar -->
+	<div id="sideMenu" class="sidenav">
+
+	<a href="javascript:void(0)" class="closeBttn">&times</a>
+	<ul id="menu">
+
+	      <li data-menuanchor="first" class="active"><a href="#first">MIT</a></li>
+	      <li data-menuanchor="second"><a href="#second">Tech Tatva</a></li>
+	      <li data-menuanchor="third"><a href="#third">Register</a></li>
+	      <li data-menuanchor="fourth"><a href="#fourth">The Manipal Conclave</a></li>
+	      <li data-menuanchor="fourth"><a href="#fourth">Events</a></li>
+	      <li data-menuanchor="fourth"><a href="#fourth">Featured Events</a></li>
+	      <li data-menuanchor="fourth"><a href="#fourth">Results</a></li>
+	      <li data-menuanchor="fourth"><a href="#fourth">Schedule</a></li>
+	      <li data-menuanchor="fourth"><a href="#fourth">Gallery</a></li>
+	      <li data-menuanchor="fourth"><a href="#fourth">Featured Workshop</a></li>
+	      <li data-menuanchor="fourth"><a href="#fourth">Workshop</a></li>
+	      <li data-menuanchor="fourth"><a href="#fourth">Sponsors</a></li>
+	      <li data-menuanchor="fourth"><a href="#fourth">Contact Us</a></li>
+
+	</ul>
+
+
+	</div>
+	<!-- Sidebar end -->
+<div id="fullpage">
+	<div class="container">
+	<span style="font-size:50px;cursor:pointer;" class="openBttn">☰</span>
+<div class="section active" id="section1">
+   <div class="content">
+   	<h1>Section1</h1>
+   </div>
+</div>
+<div class="section" id="section2">
+   <div class="content">
+   	<h1>Section2</h1>
+   </div>
+</div>
+<div class="section section-3" id="section3">
+   <div class="content">
+   	<div class="img-container">
+   		<div class="img-1 img-gallery"><div class="img-caption"><h4>TechTatva</h4></div></div>
+   		<div class="img-2 img-gallery"><div class="img-caption"><h4>TechTatva</h4></div></div>
+   		<div class="img-3 img-gallery"><div class="img-caption"><h4>TechTatva</h4></div></div>
+   		<div class="img-4 img-gallery"><div class="img-caption"><h4>TechTatva</h4></div></div>
+   		<div class="img-5 img-gallery"><div class="img-caption"><h4>TechTatva</h4></div></div>
+   		<div class="img-6 img-gallery"><div class="img-caption"><h4>TechTatva</h4></div></div>
+   		<div class="img-7 img-gallery"><div class="img-caption"><h4>TechTatva</h4></div></div>
+   		<div class="img-8 img-gallery  tada"><div class="img-caption"><h4>TechTatva</h4></div></div>
+   		<div class="img-9 img-gallery  tada"><div class="img-caption"><h4>TechTatva</h4></div></div>
+   	</div>
+   </div>
+</div>
+<div class="section" id="section4">
+
+
+   <div class="site-footer">
+	  <div class="footer-links">
+
+	  	<ul>
+			  <h4>Getting Started</h4>
+  			  <li>MIT</li>
+  			  <li>TechTatva</li>
+  			  <li>Register</li>
+  		 </ul>
+
+	  	<ul>
+		      <h4>Resources</h4>
+			  <li>Events</li>
+			  <li>Sponsors</li>
+			  <li>Workshops</li>
+		 </ul>
+
+	  	<ul>
+			<h4>Links</h4>
+  			  <li>Gallery</li>
+  			  <li>Results</li>
+  			  <li>Contact</li>
+  		 </ul>
+	  </div>
+   	<div class="site-footer-bottom">
+
+		<div class="social">
+			<a href="https://www.facebook.com/MITtechtatva/" target="_blank"><img src='/images/fb.svg' alt="Facebook"></a>
+	   		<a href="https://twitter.com/mittechtatva" target="_blank"><img src='/images/tw.svg' alt="Twitter"></a>
+	   		<a href="https://www.instagram.com/mittechtatva/" target="_blank"><img src='/images/ig.svg' alt="Instagram"></a>
+	   		<a href="https://www.youtube.com/user/TechTatva" target="_blank"><img src='/images/yt.svg' alt="Youtube"></a>
+		</div>
+
+		<div class="app">
+			<img src='/images/ios.svg' alt="App Store">
+	   		<img src='/images/play.svg' alt="Play Store">
+		</div>
+
+		<div class="sponsor">
+			<img src='/images/hp.png' alt="HP">
+			<img src='/images/adobe.png' alt="Adobe">
+
+		</div>
+   	</div>
+   </div>
+
+</div>
+</div>
+</div>
+
+
+
+<!--======================= Scripts ================================-->
+
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script type="text/javascript" src="jquery.fullPage.js"></script>
+<script type="text/javascript">
+   $(document).ready(function(){
+      $('#fullpage').fullpage({
+      sectionsColor:['#1BBC9B','#BFDA00','#4BBFC3','#7BAABE','black'],
+      anchors: ['first', 'second', 'third', 'fourth', 'foot'],
+      menu: '#menu',
+      css3:true,
+      verticalCentered:false,
+      navigation:true,
+      navigationPosition:'right'
+      });
+
+   });
+
+</script>
+
+<!-- =============================================================== -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.5/TweenMax.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/ScrollMagic.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/animation.gsap.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
