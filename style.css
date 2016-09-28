@@ -1,5 +1,6 @@
 .show-beginning
 {
+	position: relative;
 	background:url(http://waaac.co/img/patterns/contact.jpg);
 	background-repeat: repeat;
 	height: 100vh;
@@ -10,8 +11,57 @@
 	font-style: italic;
 	display: block;
 	overflow:hidden;
+	z-index:-1;
 }
+.cat-names,.workshop-names
+{
+	height: 100%;
+	background:#212121;
+	padding: 0 !important;
+	margin: 0 !important;
+}
+.conclave-speakers
+{
+	height: 100%;
+	background:#334144;
+	padding: 0 !important;
+	margin: 0 !important;
+}
+.workshop-names
+{
+	background:#075242;
+}
+.workshop-desc
+{
+	font-family: 'Open Sans';
+}
+.workshop-desc th
+{
+	text-align: center;
+	background:#2196F3;
+	border-right: solid 1px #e0e0e0;
+}
+.workshop-desc td
+{
+	background:#fff;
 
+}
+.cat-name,.workshop-name
+{
+
+	height: calc(100%/13);
+	
+	color:#fff;
+	font-family: 'Lato';
+	box-sizing: border-box;
+	padding-top: 15px;
+}
+.cat-name:hover,.workshop-name:hover
+{
+	background:#000;
+	border-left:solid 3px red;
+	cursor: pointer;
+}
 .container
 {
 	margin: 0 !important;
@@ -19,19 +69,19 @@
 	width: 100% !important;
 }
 ::-webkit-scrollbar {
-    height: 12px;
-    width: 12px;
-    background: #FFF;
+	height: 12px;
+	width: 12px;
+	background: #FFF;
 }
 
 ::-webkit-scrollbar-thumb {
-    background: #212121;
-    -webkit-border-radius: 1ex;
-    /*-webkit-box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.75);*/
+	background: #212121;
+	-webkit-border-radius: 1ex;
+	/*-webkit-box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.75);*/
 }
 
 ::-webkit-scrollbar-corner {
-    background: #212121;
+	background: #212121;
 }
 .lp-image
 {
@@ -43,8 +93,8 @@
 
 .schedule-body-one:hover,.schedule-body-two:hover,.schedule-body-three:hover,.schedule-body-four:hover
 {
-	overflow-y: auto;
-	overflow-x: hidden;
+	/*overflow-y: auto;*/
+	/*overflow-x: hidden;*/
 }
 
 
@@ -56,13 +106,36 @@
 	text-align: center;
 
 }
+.content h1
+{
+	font-family: 'Roboto';
+}
+.contact-image
+{
+	float:left;
+	margin-left: 20px;
+}
+.contact-info
+{
+	position: relative;
+	top:15px;
+	color:#fff;
+	font-family: 'Lato';
+}
 label
 {
 	color:#fff;
 }
 .content-test{
 	position: relative;
-	top: 45%;
+	top: 40%;
+	transform: translateY(-50%);
+	text-align: center;
+
+}
+.content-test-1{
+	position: relative;
+	top: 30%;
 	transform: translateY(-50%);
 	text-align: center;
 
@@ -146,7 +219,7 @@ body{
 
 .site-footer{
 
-	height: 300px;
+	height: 100vh;
 	width: 100%;
 	background-color: #fff;
 	position: relative;
@@ -170,7 +243,7 @@ body{
 
 .updates_div
 {
-		
+
 	height: 100%;
 	width: 300px;
 	right: -300px;
@@ -180,7 +253,7 @@ body{
 }
 .nav
 {
-	position: fixed;
+	position: static;
 	top: 0;
 	height: 60px;
 	width: 100%;
@@ -188,8 +261,7 @@ body{
 	
 	/*padding:15px 0 0 40px;*/
 	box-sizing:border-box;
-	z-index: 10;
-	-
+	z-index: 9999;	
 }
 .event
 {
@@ -199,7 +271,7 @@ body{
 	text-align: center;
 	box-sizing: border-box;
 	overflow:hidden;
-	
+	cursor: pointer;
 }
 .event-time
 {
@@ -244,6 +316,8 @@ body{
 nav ul
 {
 	list-style-type: none;
+	position: relative;
+	z-index: 100000;
 
 }
 nav ul li
@@ -326,7 +400,8 @@ nav ul li:hover
 		display: block;
 		width: 100%;
 		height: 50px;
-		background-color: #999;
+		bottom: 0;
+		
 		display: -webkit-flex;
 		display: -moz-flex;
 		display: -ms-flex;
@@ -339,6 +414,9 @@ nav ul li:hover
 		flex-direction: row;
 		justify-content: space-around;
 		background-color: #fff;
+		position: absolute;
+		box-sizing: border-box;
+		padding-top:10px;
 	}
 
 	.site-footer .footer-links ul h4 {
@@ -523,20 +601,7 @@ nav ul li:hover
 	}
 
 
-	@media screen and (max-width: 667px){
-
-		.img-gallery{
-			margin: 5px;
-		}
-
-		.img-container{
-			padding-left: 10px;
-		}
-
-		h4{
-			font-size: 16px;
-		}
-	}
+	
 
 	div#section3.section.section-3.fp-section.active.fp-completely{
 		/*background: url('images/old_map.png');*/
@@ -594,10 +659,7 @@ nav ul li:hover
 		font-size: 56px !important;
 		float: right;
 	}
-	@media screen and (max-height: 450px) {
-		.sidenav {padding-top: 15px;}
-		.sidenav a {font-size: 18px;}
-	}
+	
 	.openBttn{
 		z-index: 1;
 		position: fixed;
@@ -650,6 +712,7 @@ Schedule Page
 .schedule-body{
 	height: 76%;
 	/*background-color: pink;*/
+
 }
 
 .schedule-footer{
@@ -669,7 +732,7 @@ Schedule Page
 	width: 25%;
 	height: 100%;
 	float: left;
-	/*overflow-y: hidden;*/
+	overflow-y: scroll;
 }
 
 .schedule-subheader-one, .schedule-footer-one {
@@ -772,12 +835,13 @@ Schedule Page
 .sug-text
 {
 	color:#FFF;
-	
+	position: relative;
 	font-family: 'Lato';
+
 }
 .contact-r
 {
-		
+
 	width: 50%;
 	box-sizing: border-box;
 	height: 100%;
@@ -825,17 +889,23 @@ Schedule Page
 	position: relative;
 }
 
-#section5
+.vcenter {
+    margin-top: 100px;
+    text-align: center;
+}
+
+
+#section7
 {
 	background:url(http://waaac.co/img/patterns/contact.jpg);
 	background-repeat: repeat;
 }
-#section5 input,#section5 textarea
+#section7 input,#section5 textarea
 {
 	background:none;
 	border: solid 1px #fff;
 }
-#section5 button
+#section7 button
 {
 	background:#009688;
 	height: 40px;
@@ -844,7 +914,16 @@ Schedule Page
 	color:#FFF;
 	border-radius: 2px;
 }
-
-
+.category-events
+{
+	background:#2196F3;
+	height: 70px;
+	text-align: center;
+	padding-top:25px;
+	color:#fff;
+	font-family: 'Lato';
+	border: solid 1px #e0e0e0;
+	margin: 0 auto;
+}
 
 /*CONTACT SECTION ENDS*/
