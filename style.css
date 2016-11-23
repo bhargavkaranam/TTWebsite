@@ -1,3 +1,19 @@
+.modal
+{
+	position: absolute !important;
+}
+.modal-dialog {
+    position: relative !important;
+    top: 40px !important;
+}
+.fp-controlArrow.fp-prev
+{
+	border-color:transparent #616161 transparent transparent !important;
+}
+.fp-controlArrow.fp-next
+{
+	border-color:transparent transparent transparent #616161 !important;
+}
 .show-beginning
 {
 	position: relative;
@@ -13,12 +29,49 @@
 	overflow:hidden;
 	z-index:-1;
 }
-.cat-names,.workshop-names
+th
+{
+	text-align: center !important;
+}
+.cat-names,.workshop-names,.workshop-names-external
 {
 	height: 100%;
 	background:#212121;
 	padding: 0 !important;
 	margin: 0 !important;
+}
+.conclave-description
+{
+	position: relative;
+	top:40px;
+	font-family: 'Lato';
+	font-size:19px;
+	text-align: justify;
+}
+.speaker
+{
+	float: left;
+	height: 150px;
+	width: 150px;
+	border-radius: 50%;
+	background:#212121;
+	margin-right: 30px;
+	color:#FFF;
+	font-size: 95px;
+	box-sizing: border-box;
+	padding: 10px;
+	text-align: center;
+
+
+}
+.desc,.cat-desc
+{
+	text-align: justify;
+	padding: 20px;
+}
+.cat-names
+{
+	overflow-y : scroll;
 }
 .conclave-speakers
 {
@@ -27,17 +80,23 @@
 	padding: 0 !important;
 	margin: 0 !important;
 }
+.catheads
+{
+	text-align: center;
+}
 .workshop-names
 {
 	background:#075242;
+	overflow-y : scroll;
 }
 .workshop-desc
 {
 	font-family: 'Open Sans';
+	padding: 20px;
 }
 .workshop-desc th
 {
-	text-align: center;
+	text-align: justify;
 	background:#2196F3;
 	border-right: solid 1px #e0e0e0;
 }
@@ -45,6 +104,21 @@
 {
 	background:#fff;
 
+}
+.sponsor
+{
+	height: 220px;
+}
+.sponsor-logo
+{
+	height: 200px;
+	
+	
+}
+.sponsor-desc
+{
+	color:#fff;
+	margin: -5px;
 }
 .cat-name,.workshop-name
 {
@@ -69,14 +143,15 @@
 	width: 100% !important;
 }
 ::-webkit-scrollbar {
-	height: 12px;
-	width: 12px;
+	height: 3px;
+	width: 15px;
 	background: #FFF;
+	
 }
 
 ::-webkit-scrollbar-thumb {
-	background: #212121;
-	-webkit-border-radius: 1ex;
+	background: #a1abad;
+	
 	/*-webkit-box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.75);*/
 }
 
@@ -106,6 +181,17 @@
 	text-align: center;
 
 }
+.content-conclave{
+	position: relative;
+	
+	text-align: center;
+
+}
+#q
+{
+	position: relative;
+	
+}
 .content h1
 {
 	font-family: 'Roboto';
@@ -122,6 +208,11 @@
 	color:#fff;
 	font-family: 'Lato';
 }
+.contact-info a
+{
+	text-decoration: none;
+	color:#FFF;
+}
 label
 {
 	color:#fff;
@@ -135,7 +226,7 @@ label
 }
 .content-test-1{
 	position: relative;
-	top: 30%;
+	top: 10%;
 	transform: translateY(-50%);
 	text-align: center;
 
@@ -257,7 +348,7 @@ body{
 	top: 0;
 	height: 60px;
 	width: 100%;
-	background:#AB3E42;
+	background:rgba(48,41,68,0.7);
 	
 	/*padding:15px 0 0 40px;*/
 	box-sizing:border-box;
@@ -538,59 +629,113 @@ nav ul li:hover
 
 	.img-1{
 
-		background: url('images/img-1.jpg') center center no-repeat;
+		background: url('images/TT1.jpg') center center no-repeat;
 		-webkit-background-size: cover;
 		background-size: cover;
 	}
 	.img-2{
 
-		background: url('images/img-2.jpg') center center no-repeat;
+		background: url('images/TT2.jpg') center center no-repeat;
 		-webkit-background-size: cover;
 		background-size: cover;
 	}
 	.img-3{
 
-		background: url('images/img-3.jpg') center center no-repeat;
+		background: url('images/TT3.jpg') center center no-repeat;
 		-webkit-background-size: cover;
 		background-size: cover;
 	}
 	.img-4{
 
-		background: url('images/img-4.jpg') center center no-repeat;
+		background: url('images/TT4.jpg') center center no-repeat;
 		-webkit-background-size: cover;
 		background-size: cover;
 	}
 	.img-5{
 
-		background: url('images/img-5.jpg') center center no-repeat;
+		background: url('images/TT5.jpg') center center no-repeat;
 		-webkit-background-size: cover;
 		background-size: cover;
 	}
 	.img-6{
 
-		background: url('images/img-6.jpg') center center no-repeat;
+		background: url('images/TT6.jpg') center center no-repeat;
 		-webkit-background-size: cover;
 		background-size: cover;
 	}
 	.img-7{
 
-		background: url('images/img-7.jpg') center center no-repeat;
+		background: url('images/TT7.jpg') center center no-repeat;
 		-webkit-background-size: cover;
 		background-size: cover;
 	}
 	.img-8{
 
-		background: url('images/img-8.jpg') center center no-repeat;
+		background: url('images/TT8.jpg') center center no-repeat;
 		-webkit-background-size: cover;
 		background-size: cover;
 	}
 	.img-9{
 
-		background: url('images/img-9.jpg') center center no-repeat;
+		background: url('images/TT9.jpg') center center no-repeat;
 		-webkit-background-size: cover;
 		background-size: cover;
 	}
 
+	.img-10{
+
+		background: url('images/TT10.jpg') center center no-repeat;
+		-webkit-background-size: cover;
+		background-size: cover;
+	}
+	.img-11{
+
+		background: url('images/TT11.jpg') center center no-repeat;
+		-webkit-background-size: cover;
+		background-size: cover;
+	}
+	.img-12{
+
+		background: url('images/TT12.jpg') center center no-repeat;
+		-webkit-background-size: cover;
+		background-size: cover;
+	}
+	.img-13{
+
+		background: url('images/TT13.jpg') center center no-repeat;
+		-webkit-background-size: cover;
+		background-size: cover;
+	}
+	.img-14{
+
+		background: url('images/TT14.jpg') center center no-repeat;
+		-webkit-background-size: cover;
+		background-size: cover;
+	}
+	.img-15{
+
+		background: url('images/TT15.jpg') center center no-repeat;
+		-webkit-background-size: cover;
+		background-size: cover;
+	}
+	.img-16{
+
+		background: url('images/TT16.jpg') center center no-repeat;
+		-webkit-background-size: cover;
+		background-size: cover;
+	}
+	.img-17{
+
+		background: url('images/TT17.jpg') center center no-repeat;
+		-webkit-background-size: cover;
+		background-size: cover;
+	}
+	.img-18{
+
+		background: url('images/TT18.jpg') center center no-repeat;
+		-webkit-background-size: cover;
+		background-size: cover;
+	}
 	h4{
 		margin: 0;
 		padding: 5px;
@@ -710,7 +855,7 @@ Schedule Page
 }
 
 .schedule-body{
-	height: 76%;
+	height: 83%;
 	/*background-color: pink;*/
 
 }
@@ -790,6 +935,102 @@ Schedule Page
 }
 
 .schedule-subheader p {
+	font-style: italic;
+	font-weight: 300;
+}
+
+/*PRETECHTATVA SCHEDULE*/
+
+.pretechtatva-schedule-body-one,
+.pretechtatva-schedule-body-two,
+.pretechtatva-schedule-body-three,
+.pretechtatva-schedule-body-four,
+.pretechtatva-schedule-body-five,
+.pretechtatva-schedule-body-six,
+.pretechtatva-schedule-body-seven,
+.pretechtatva-schedule-body-eight,
+.pretechtatva-schedule-body-nine,
+.pretechtatva-schedule-body-ten,
+.pretechtatva-schedule-subheader-one,
+.pretechtatva-schedule-subheader-two,
+.pretechtatva-schedule-subheader-three,
+.pretechtatva-schedule-subheader-four,
+.pretechtatva-schedule-subheader-five,
+.pretechtatva-schedule-subheader-six,
+.pretechtatva-schedule-subheader-seven,
+.pretechtatva-schedule-subheader-eight,
+.pretechtatva-schedule-subheader-nine,
+.pretechtatva-schedule-subheader-ten {
+	width: 20%;
+	height: 100%;
+	float: left;
+	
+}
+
+.pretechtatva-schedule-subheader-one, .pretechtatva-schedule-footer-one,.pretechtatva-schedule-subheader-six, .pretechtatva-schedule-footer-six {
+	background-color: #E84141;
+}
+.pretechtatva-schedule-subheader-two, .pretechtatva-schedule-footer-two,.pretechtatva-schedule-subheader-seven, .pretechtatva-schedule-footer-seven {
+	background-color: #1D1919;
+}
+.pretechtatva-schedule-subheader-three, .pretechtatva-schedule-footer-three,.pretechtatva-schedule-subheader-eight, .pretechtatva-schedule-footer-eight {
+	background-color: #3B8CDD;
+}
+.pretechtatva-schedule-subheader-four, .pretechtatva-schedule-footer-four,.pretechtatva-schedule-subheader-nine, .pretechtatva-schedule-footer-nine {
+	background-color: #4AD5BF;
+}
+.pretechtatva-schedule-subheader-five, .pretechtatva-schedule-footer-five,.pretechtatva-schedule-subheader-ten, .pretechtatva-schedule-footer-ten {
+	background-color: #3B8CDD;
+}
+
+.schedule-header {
+	text-transform: uppercase;
+	font-weight: 700;
+	color: #fff;
+	font-size: 18px;
+	font-style: italic;
+	background: url('images/bookeh.jpg') center center no-repeat;
+	-webkit-background-size: cover;
+	background-size: cover;
+}
+
+.pretechtatva-schedule-footer-one,
+.pretechtatva-schedule-footer-two,
+.pretechtatva-schedule-footer-three,
+.pretechtatva-schedule-footer-four,
+.pretechtatva-schedule-footer-five,
+.pretechtatva-schedule-footer-six,
+.pretechtatva-schedule-footer-seven,
+.pretechtatva-schedule-footer-eight,
+.pretechtatva-schedule-footer-nine,
+.pretechtatva-schedule-footer-ten{
+	width: 20%;
+	height: 100%;
+	float: left;
+}
+
+.pretechtatva-schedule-footer img{
+
+	height: 85%;
+	padding-top: 5px;
+}
+
+.pretechtatva-schedule-subheader input{
+	outline: none;
+	border: none;
+	border-radius: 4px;
+	width: 64%;
+	height: 18%;
+	padding: 5px 10px;
+	margin-top: 4%;
+}
+
+.pretechtatva-schedule-subheader h2,p {
+	color: #fff;
+	margin-top: 5px;
+}
+
+.pretechtatva-schedule-subheader p {
 	font-style: italic;
 	font-weight: 300;
 }
@@ -890,15 +1131,15 @@ Schedule Page
 }
 
 .vcenter {
-    margin-top: 100px;
-    text-align: center;
+	margin-top: 100px;
+	text-align: center;
 }
 
 
 #section7
 {
-	background:url(http://waaac.co/img/patterns/contact.jpg);
-	background-repeat: repeat;
+	/*background:url(http://waaac.co/img/patterns/contact.jpg);*/
+	/*background-repeat: repeat;*/
 }
 #section7 input,#section5 textarea
 {
@@ -925,5 +1166,63 @@ Schedule Page
 	border: solid 1px #e0e0e0;
 	margin: 0 auto;
 }
-
+textarea
+{
+	background:none !important;
+	border: solid 1px #fff;
+}
 /*CONTACT SECTION ENDS*/
+#name,#email,#message
+{
+	color:#000;
+}
+.chip {
+	display: inline-block;
+	padding: 0 0px;
+	height: 70px;
+	font-size: 14px;
+	line-height: 30px;
+	border-radius: 25px;
+	background-color: #d8cbcb;
+	width: 280px;
+	margin-bottom: 5px;
+	text-align: center;
+
+}
+
+.chip img {
+	float: left;
+	margin: 0;
+	height: 70px;
+	width: 70px;
+	border-radius: 50%;
+
+}
+.chip-number
+{
+	
+}
+.table td
+{
+	text-align: center !important;
+}
+.rulebooks img
+{
+	margin-right: 20px;
+	display: block;
+	float: left;
+	box-shadow: 3px 3px 1px #ccc;
+	-webkit-box-shadow: 3px 3px 1px #ccc;
+	-moz-box-shadow: 3px 3px 1px #ccc;
+}
+.rtitle
+{
+	padding: 80px 0 0 0;
+	text-align: center;
+	font-size: 25px;
+	font-family: 'Lato';
+}
+.eventModalDescription i
+{
+	color:#212121;
+}
